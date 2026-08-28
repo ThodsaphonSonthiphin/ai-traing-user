@@ -49,12 +49,19 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 - Decided: the out-list is a named boundary, spoken in session 1 and written in the cloned repo, with two different reasons - firm M365/SharePoint/work mail are never required though allowed if the Learner can connect them alone, and ERP/MES are a hard boundary because no connector exists.
 - Glossary: Connector and Working folder split into two terms in CONTEXT.md. The Lab 1 name 'Connectors and local files' conflated them, and this decision turns on them being two routes that fail differently.
 - Corrected: this repo IS under git (branch main). The chart-time note saying it is not a git repo yet is stale - the map, the ADRs and CONTEXT.md are all committed here.
+- Decided: day-zero setup is its own sitting of about 20 minutes, and it is NOT a Lab (claude-course-0009). Install and sign-in is the highest-variance step in the course, so a failure costs a short sitting rather than the one session where the Learner forms their impression of the tool.
+- Decided: the Setup check is a question whose answer is only in a file of the cloned course repository. One action proves the application is installed, the sign-in is correct, Cowork is present on this plan, and a Working folder genuinely reads - with no client data on the Mac.
+- Decided: the Setup's step order is forced, not chosen. The check (step 5) must not need client data; the privacy segment (step 6) must precede the Learner's own Working folder (step 7), because that is what brings client material to the machine.
+- Glossary: Setup is now its own term in CONTEXT.md, and claude-course-0003's wording 'the setup Lab' was corrected by a dated amendment on that ADR. A Lab operates on the Learner's own client work; the Setup does not, and widening the Lab definition would cost the word the one property that makes it useful.
+- Clarified: claude-course-0005's count of five sessions is UNCHANGED - it counts teaching sessions that carry a Lab. As the Learner experiences it there are six sittings: one Setup and five sessions. The material must say it that way so nobody reads the sixth as an oversight.
+- Prerequisite, outside the Setup: the Learner holds an individual Max subscription before the sitting begins. Buying it is not a step of the course.
+- STILL NOT MEASURED: whether Cowork's isolated VM reads a mounted SMB share. Both cowork-connectors and env-setup-lab closed without testing it and each pointed at the other, so it is now the ticket share-reachability. It needs a real Mac in front of a real project share.
 <!-- decision-map:notes:end -->
 
 ## Milestones
 
 <!-- decision-map:milestones:start -->
-- `report-pitch` A Learner produces a client-facing report and pitch for a consulting, management or business-analysis engagement [function-coverage, cowork-connectors, confidentiality-rule, session-shape, lab-design-pattern, design-deliverable, env-setup-lab, teaching-mode, number-trust]
+- `report-pitch` A Learner produces a client-facing report and pitch for a consulting, management or business-analysis engagement [function-coverage, cowork-connectors, confidentiality-rule, session-shape, lab-design-pattern, design-deliverable, env-setup-lab, teaching-mode, number-trust, share-reachability]
 <!-- decision-map:milestones:end -->
 
 ## Decisions so far
@@ -64,6 +71,7 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 
 - [Confidentiality - what rule governs bringing real client work into class?](tickets/confidentiality-rule.md) — No confidentiality gate on Lab material - any client document is used as-is; the privacy control is taught as consultant knowledge, not enforced.
 - [Cowork connectors - which must a Learner have working before Lab 1, and which firm systems stay out?](tickets/cowork-connectors.md) — One Working folder on local disk is the entire prerequisite: no Connector is required, the author demos one, and firm M365 stays optional while ERP is a hard boundary.
+- [Setup lab - how does a learner get from a bare laptop to a working install?](tickets/env-setup-lab.md) — Setup is its own ~20-minute sitting, not a Lab: seven ordered steps ending with the client folder, and the check is a question answerable only from a file in the cloned course repository.
 - [Coverage - which Claude functions are taught hands-on versus shown as reference?](tickets/function-coverage.md) — Lab time is earned by serving the report-pitch milestone: connectors, Projects, outputs, Design, then Skills. Sub-agents, scheduled tasks and plugins are demo-only.
 - [Lab pattern - how is a lab repeatable when every learner brings different input?](tickets/lab-design-pattern.md) — Every Lab has four parts: their own work varies; the steps, one check and the stuck-list are fixed. The check tests capability, not content, so it is writable once.
 - [Numbers - what does a Learner do before acting on a figure Claude produced?](tickets/number-trust.md) — A number must point to a source: calculated ones carry their formula in the cell, copied ones name file and location, and model-supplied figures are banned outright.
@@ -84,6 +92,7 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 - Whether the course ships ready-made skills or a plugin for learners to install, or only teaches them to write their own.
 - How learners keep improving after the course ends - refresher, internal community, or nothing.
 - How business impact is measured after the course - time saved per proposal, or something else.
+- When the Setup sitting happens relative to session 1 - same day, or a separate day. Related to the cadence assumption already recorded on session-shape.
 <!-- decision-map:fog:end -->
 
 ## Out of scope

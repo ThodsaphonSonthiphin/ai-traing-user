@@ -57,6 +57,14 @@ One exercise a Learner performs on their own real client work. The steps and the
 definition of done are fixed by the course; the material is the Learner's own.
 That split is what separates a Lab from a demonstration.
 
+## Setup
+
+The one sitting that takes a Learner from a bare Mac to a working Claude,
+before any teaching starts. Deliberately not a Lab: it operates on the cloned
+course repository rather than the Learner's own client work, which is the
+distinction the word Lab exists to carry. The course has one Setup and five
+Labs.
+
 ## Capstone
 
 The single Skill a Learner produces from their own repeatable job, at the end of

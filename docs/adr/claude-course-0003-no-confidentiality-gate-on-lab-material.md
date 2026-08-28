@@ -5,7 +5,7 @@ flowchart TD
     Q{"What rule governs a Learner bringing<br/>real client work into the course?"} -->|chosen| NONE["no gate - any client document<br/>may be used as-is"]
     Q -->|rejected| REDACT["redact identifying details first -<br/>costs every Lab a preparation step<br/>the owner does not require"]
     Q -->|rejected| APPROVE["a named approver signs off each<br/>document - invents a process the<br/>firm does not have"]
-    NONE --> TEACH["the privacy control is still TAUGHT,<br/>about 2 minutes in the setup Lab"]
+    NONE --> TEACH["the privacy control is still TAUGHT,<br/>about 2 minutes in the Setup"]
     TEACH --> T1["where the switch is:<br/>Settings > Privacy ><br/>Help Improve our AI models"]
     TEACH --> T2["what it controls, and what it<br/>does NOT: safety classifiers sit<br/>outside the toggle"]
     TEACH --> T3["look at your own setting -<br/>Anthropic publishes no default,<br/>so nobody may assume one"]
@@ -22,7 +22,7 @@ client work - stands unqualified.
 The privacy control is still course content, for a reason that has nothing to do
 with permission: a Learner is a consultant, and a factory client will eventually
 ask where their data went. A consultant who cannot answer that has a professional
-problem, not a compliance one. About two minutes in the setup Lab covers it.
+problem, not a compliance one. About two minutes in the Setup covers it.
 
 ## Three facts the teaching must carry
 
@@ -45,3 +45,10 @@ problem, not a compliance one. About two minutes in the setup Lab covers it.
 The course has **no designed fallback** for a Learner whose only real example
 cannot be shown to the room. It does not need one under this decision, but if the
 position ever changes, that gap is where the change lands first.
+
+## Naming corrected 2026-08-28
+
+This ADR originally wrote "the setup Lab". `claude-course-0009` established
+that the setup sitting is **not** a Lab - a Lab operates on the Learner's own
+client work and the Setup does not - so the slot is named **Setup**. The
+decision recorded above is unchanged; only the name of the slot it sits in.
