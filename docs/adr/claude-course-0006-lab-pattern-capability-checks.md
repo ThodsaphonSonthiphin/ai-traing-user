@@ -23,7 +23,7 @@ Learner brings different work. A check written about what the Learner can now
 |---|---|
 | 1 Connectors and local files | Ask Claude a question whose answer is only in your own file. It answers correctly. |
 | 2 Projects and memory | Close the Project and reopen it. Ask what you did last time. It answers. |
-| 3 Professional outputs | Open the Excel file. Change one number. The formulas recalculate. |
+| 3 Professional outputs | Change a source cell. The summary number that goes to the client must move. **Strengthened 2026-08-28 by claude-course-0007**; the original check was "open the Excel file, change one number, the formulas recalculate", which proves the spreadsheet works but not that the client-facing figure was computed rather than typed. |
 | 4 Claude Design | Open the result on a phone. It is still readable. |
 | 5 The Capstone Skill | Ask for the job in ordinary words, without naming the Skill. It runs. |
 
@@ -48,3 +48,10 @@ still written to be input-independent, because that costs nothing here and is
 exactly what the second Learner would need. Part four - where people get stuck -
 is the part that can only be filled in by teaching the first Learner, so it starts
 empty and is written from what actually happens.
+
+## Amended 2026-08-28
+
+The Lab 3 check in the table above was strengthened by `claude-course-0007`. The
+rest of this ADR stands: the four-part pattern, the capability-not-content rule,
+and the four other checks are unchanged. The amendment scopes the original Lab 3
+check rather than replacing the decision it belonged to.

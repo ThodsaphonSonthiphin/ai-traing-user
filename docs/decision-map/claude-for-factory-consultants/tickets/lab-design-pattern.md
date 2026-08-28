@@ -107,3 +107,23 @@ measuring point at all, the owner answered **"โอเค"**.
   shape: a fixed step, and a capability check that holds whatever page is open.
 
 <!-- decision-map:resolution:end -->
+
+## Comment
+
+## Amendment from the session that worked number-trust (2026-08-28)
+
+This ticket's resolution recorded the Lab 3 check as *"open the Excel file, change
+one number, the formulas recalculate"*. That check is **not withdrawn** - it was
+correct for what it tested - but it has been **strengthened**, because it proves
+the spreadsheet works and not that the number a client reads was computed rather
+than typed.
+
+The Lab 3 check is now:
+
+> **Change a source cell. The summary number that goes to the client must move.**
+
+One action, two properties. `claude-course-0006` carries a dated amendment saying
+the same thing, and the reasoning is in `claude-course-0007`. Nothing else in this
+resolution changes: the four-part pattern, the capability-not-content rule and the
+other four checks all stand.
+
