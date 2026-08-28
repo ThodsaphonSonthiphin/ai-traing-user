@@ -36,6 +36,21 @@ The one Surface a Learner works in for the whole course and is expected to keep
 opening afterwards. Distinct from a Surface *shown for contrast*, which the
 course demonstrates once and never builds on. A course has exactly one Spine.
 
+## Connector
+
+A signed-in link from a Surface to an external system - Microsoft 365, Google
+Drive - through which Claude reaches material the Learner did not put on their
+own machine. Deliberately not a synonym for "how Claude reads my files": a
+Working folder needs no Connector and no sign-in, which is the distinction the
+course depends on.
+
+## Working folder
+
+The one folder on the Learner's own machine that Cowork reads and writes
+directly. It holds the Learner's real client work, and it is what a Lab operates
+on. Named separately from a Connector because the two reach material by
+different routes and fail for different reasons.
+
 ## Lab
 
 One exercise a Learner performs on their own real client work. The steps and the

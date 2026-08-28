@@ -42,6 +42,13 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 - Decided: a number must point to a source (claude-course-0007). Calculated numbers carry their formula in the cell so Excel computes them, copied numbers name their file and location, and figures the model supplied - industry averages, typical efficiencies, market prices - are BANNED outright.
 - Amended: the Lab 3 check from claude-course-0006 is strengthened to 'change a source cell, the summary number that goes to the client must move'. The original check proved the spreadsheet works, not that the client-facing figure was computed rather than typed. Recorded on claude-course-0006 and as a comment on the closed lab-design-pattern ticket.
 - Cost accepted with the ban: asking Claude for a typical industry figure is the most striking demonstration available and is now forbidden, because it is exactly the habit the course must not build.
+- Decided: the entire prerequisite for Lab 1 is ONE Working folder on the Learner's own disk (claude-course-0008). No Connector is required by anything in the course - the cohort is on individual Max, and connecting the firm's work tenant can need an admin approval the Learner cannot grant and who is not in the room.
+- Decided: Lab 1 splits - hands-on is local files, and the author demonstrates ONE Connector on their own account for about five minutes while the Learner watches. Having the Learner practise on a personal Google Drive was rejected against CONTEXT.md's own Lab definition: a personal drive is not their real client work.
+- Decided: a folder on the Mac's own disk is the required baseline, but the mounted network share where a project engineer's real work usually lives is TRIED during setup and becomes the Working folder if Cowork reads it; copy-down is the fallback and Lab 1 runs unchanged either way.
+- NOT MEASURED: whether Cowork's isolated VM reads a mounted SMB share. No test was run for cowork-connectors. The decision is structured so the answer cannot block the course either way, and the measurement belongs to env-setup-lab.
+- Decided: the out-list is a named boundary, spoken in session 1 and written in the cloned repo, with two different reasons - firm M365/SharePoint/work mail are never required though allowed if the Learner can connect them alone, and ERP/MES are a hard boundary because no connector exists.
+- Glossary: Connector and Working folder split into two terms in CONTEXT.md. The Lab 1 name 'Connectors and local files' conflated them, and this decision turns on them being two routes that fail differently.
+- Corrected: this repo IS under git (branch main). The chart-time note saying it is not a git repo yet is stale - the map, the ADRs and CONTEXT.md are all committed here.
 <!-- decision-map:notes:end -->
 
 ## Milestones
@@ -56,6 +63,7 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 #### report-pitch — A Learner produces a client-facing report and pitch for a consulting, management or business-analysis engagement
 
 - [Confidentiality - what rule governs bringing real client work into class?](tickets/confidentiality-rule.md) — No confidentiality gate on Lab material - any client document is used as-is; the privacy control is taught as consultant knowledge, not enforced.
+- [Cowork connectors - which must a Learner have working before Lab 1, and which firm systems stay out?](tickets/cowork-connectors.md) — One Working folder on local disk is the entire prerequisite: no Connector is required, the author demos one, and firm M365 stays optional while ERP is a hard boundary.
 - [Coverage - which Claude functions are taught hands-on versus shown as reference?](tickets/function-coverage.md) — Lab time is earned by serving the report-pitch milestone: connectors, Projects, outputs, Design, then Skills. Sub-agents, scheduled tasks and plugins are demo-only.
 - [Lab pattern - how is a lab repeatable when every learner brings different input?](tickets/lab-design-pattern.md) — Every Lab has four parts: their own work varies; the steps, one check and the stuck-list are fixed. The check tests capability, not content, so it is writable once.
 - [Numbers - what does a Learner do before acting on a figure Claude produced?](tickets/number-trust.md) — A number must point to a source: calculated ones carry their formula in the cell, copied ones name file and location, and model-supplied figures are banned outright.
@@ -85,4 +93,5 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 - Teaching engineering fundamentals, consulting practice or sales technique themselves - the course assumes them.
 - Comparing Claude against other AI vendors.
 - Training anyone outside the project-engineer-as-consultant role.
+- Reaching the firm's ERP or MES from Claude - no connector exists and it would need a custom MCP server, which is past a Learner who does not open a terminal.
 <!-- decision-map:scope:end -->
