@@ -34,6 +34,7 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 
 <!-- decision-map:decisions:start -->
 - [Account plan - which Claude subscription do learners need, and what does it imply?](tickets/account-plan.md) — Team or existing Enterprise - commercial terms do not train on your data; all paid tiers include Code, Design, Chrome.
+- [Existing material - what does Anthropic already publish that this course should build on?](tickets/existing-material.md) — Reuse Claude 101, AI Fluency, Chrome/Design guides; adapt Skills and Code docs; author all consultant content ourselves.
 <!-- decision-map:decisions:end -->
 
 ## Not yet specified

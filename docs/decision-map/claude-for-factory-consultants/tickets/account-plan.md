@@ -26,6 +26,18 @@ graph TD
 
 Team or existing Enterprise - commercial terms do not train on your data; all paid tiers include Code, Design, Chrome.
 
+```mermaid
+graph TD
+    Q["Which plan do learners need?"] --> CONSUMER["Pro / Max<br/>consumer terms"]
+    Q --> COMMERCIAL["Team / Enterprise / API<br/>commercial terms"]
+    CONSUMER --> RISK["trains on your data by default<br/>per-learner toggle, no org override"]
+    COMMERCIAL --> SAFE["never trains by default<br/>admin controls exist"]
+    RISK --> REJECT["REJECTED - learners bring<br/>real factory client work"]
+    SAFE --> PICK["CHOSEN - Team is the floor,<br/>Enterprise if the firm already has it"]
+    PICK --> NOTE["every paid tier includes<br/>Code + Design + Chrome,<br/>so plan does not gate coverage"]
+    PICK --> TODO["pre-course admin task:<br/>enable Claude Design on Enterprise<br/>(off by default)"]
+```
+
 Resolved by an AFK research subagent on 2026-08-28. Every claim below was fetched from Anthropic's own live pages, not from model memory. Items the agent could not confirm are listed under NOT VERIFIED and must be checked before any budget or policy statement is made to learners.
 
 ## Comparison
