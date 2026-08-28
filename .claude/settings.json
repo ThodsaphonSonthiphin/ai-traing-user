@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "enabledPlugins": {
+    "dev-workflows@workflow-daily-work": true,
+    "decision-map@workflow-daily-work": true,
+    "github-backlog@workflow-daily-work": true,
+    "react-workflows@workflow-daily-work": true
+  },
+  "extraKnownMarketplaces": {
+    "workflow-daily-work": {
+      "source": {
+        "source": "github",
+        "repo": "ThodsaphonSonthiphin/workflow-daily-work"
+      }
+    }
+  }
+}
