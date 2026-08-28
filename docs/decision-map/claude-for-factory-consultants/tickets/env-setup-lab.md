@@ -4,7 +4,7 @@ type: task
 mode: HITL
 status: open
 assignee: 
-blocked_by: [surface-choice]
+blocked_by: [surface-choice, cowork-connectors]
 gist: 
 ---
 
@@ -16,6 +16,7 @@ What is the day-zero setup lab that takes a learner from a bare company laptop t
 ```mermaid
 graph TD
     ME["env-setup-lab (this ticket)"]
-    P0["surface-choice"] --> ME
+    P0["cowork-connectors"] --> ME
+    P1["surface-choice"] --> ME
 ```
 <!-- decision-map:graph:end -->

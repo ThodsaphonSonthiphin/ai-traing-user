@@ -83,3 +83,35 @@ Page currency: the code.claude.com and platform.claude.com pages are live versio
 - Whether Team has any admin toggle to restrict Claude Design or the Chrome extension per member. Enterprise has a confirmed one for Design; no Team equivalent was found.
 
 <!-- decision-map:resolution:end -->
+
+## Comment
+
+## Correction from the session that worked surface-choice (2026-08-28)
+
+The recorded gist recommends "Team or existing Enterprise". That was a
+recommendation offered before the cohort was known. The owner has since stated
+the actual situation, and it is different:
+
+**Learners are on individual Max plans, on Mac machines, using Chrome.**
+Not Team, not Enterprise, not company-managed.
+
+The research above is not withdrawn - its plan comparison and its sources stand,
+and its warning about consumer terms is now the operative half rather than the
+footnote. What changes is which row applies:
+
+- Max sits under **consumer terms**. The training toggle is per learner, there is
+  **no admin lever** to set it for the cohort, and the reported default is on.
+  Retention is 5 years when opted in, 30 days when opted out.
+- Because learners bring real factory client work as lab material, every learner
+  must be walked through claude.ai/settings/data-privacy-controls before the
+  first lab. This is now a pre-course gate, not advice. It belongs to
+  `confidentiality-rule`.
+- The NOT VERIFIED item about the Team admin console is now moot for this cohort.
+- The NOT VERIFIED item about whether the training toggle defaults to on is now
+  **load-bearing** and must be checked in a real account before the course runs.
+
+One capability flips with this, in the cohort's favour: recording a skill is
+available on Pro, Max and Team, in Cowork in Claude for Mac, and is unavailable
+on Windows and on Enterprise. Max plus Mac plus not-Enterprise means the no-code
+skill-authoring path IS open to these learners. Resolved on `surface-choice`.
+

@@ -22,6 +22,9 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 - Decided: Claude Design, the canvas artifact skill, is required course content and not optional.
 - Decided: the Claude Chrome extension is required course content, and it must be taught through named use cases from the consultant's own browser work, not as a feature tour.
 - Milestones were deliberately skipped at chart time; group the tickets later from work-map.
+- Decided: Claude Cowork in the desktop app is the Spine (claude-course-0001). Claude Code is shown late, as contrast and as the fallback if record-a-skill proves too weak.
+- Decided: the cohort is individual Max plans on Mac machines with Chrome - not Team, not Enterprise, not company-managed. This supersedes the Team/Enterprise recommendation in account-plan's gist.
+- Decided: sharing a finished Skill with teammates is optional, not a course requirement.
 <!-- decision-map:notes:end -->
 
 ## Milestones
@@ -35,6 +38,7 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 <!-- decision-map:decisions:start -->
 - [Account plan - which Claude subscription do learners need, and what does it imply?](tickets/account-plan.md) — Team or existing Enterprise - commercial terms do not train on your data; all paid tiers include Code, Design, Chrome.
 - [Existing material - what does Anthropic already publish that this course should build on?](tickets/existing-material.md) — Reuse Claude 101, AI Fluency, Chrome/Design guides; adapt Skills and Code docs; author all consultant content ourselves.
+- [Surface - which Claude surface is the spine of the course?](tickets/surface-choice.md) — Claude Cowork in the desktop app is the Spine; Claude Code is shown late as contrast and as the fallback if record-a-skill proves too weak.
 <!-- decision-map:decisions:end -->
 
 ## Not yet specified
@@ -44,7 +48,6 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 - How a factory data-analysis lab keeps Claude from inventing a number the engineer will act on.
 - Whether the course ships ready-made skills or a plugin for learners to install, or only teaches them to write their own.
 - How learners keep improving after the course ends - refresher, internal community, or nothing.
-- Whether MCP connectors to the firm's own systems (ERP, file share, mail) are inside the course.
 - How business impact is measured after the course - time saved per proposal, or something else.
 <!-- decision-map:fog:end -->
 
