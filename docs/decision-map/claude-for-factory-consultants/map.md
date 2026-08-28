@@ -30,12 +30,15 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 - Decided: Lab material carries no confidentiality constraint - any client document is used as-is, with no redaction step and no approver (claude-course-0003). The privacy control is taught as consultant knowledge, about two minutes in the setup Lab, not enforced as a gate.
 - Known gap: no fallback is designed for a Learner whose only real example cannot be shown to the room. It does not arise under claude-course-0003; if that position ever changes, this is where the change lands first.
 - Corrected: Anthropic's own privacy article states no default for the consumer training toggle. The course tells Learners to open and read their own setting rather than assume one. This supersedes the reported-default-on claim in the comment on account-plan.
+- Decided: taught live 1:1 by the author, cohort of one for now (claude-course-0004). Learner-facing material IS written, because the repo is cloned onto the Learner's machine; the instructor script is deferred, with a named trigger - a second Learner, or anyone other than the author teaching.
+- Decided: the author clones the repo onto the Learner's machine at the start of session 1, so the Learner touches no terminal and the first minute does not contradict the no-terminal Spine. A ZIP download is the written fallback for setup without the author present.
+- Consequence: the cloned course repo is simultaneously the material and the Learner's Cowork working folder, so Labs can reference its files by path with no upload step. Design for this in repo-layout.
 <!-- decision-map:notes:end -->
 
 ## Milestones
 
 <!-- decision-map:milestones:start -->
-- `report-pitch` A Learner produces a client-facing report and pitch for a consulting, management or business-analysis engagement [function-coverage, cowork-connectors, confidentiality-rule, session-shape, lab-design-pattern, design-deliverable, env-setup-lab]
+- `report-pitch` A Learner produces a client-facing report and pitch for a consulting, management or business-analysis engagement [function-coverage, cowork-connectors, confidentiality-rule, session-shape, lab-design-pattern, design-deliverable, env-setup-lab, teaching-mode]
 <!-- decision-map:milestones:end -->
 
 ## Decisions so far
@@ -51,6 +54,7 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 - [Account plan - which Claude subscription do learners need, and what does it imply?](tickets/account-plan.md) — Team or existing Enterprise - commercial terms do not train on your data; all paid tiers include Code, Design, Chrome.
 - [Existing material - what does Anthropic already publish that this course should build on?](tickets/existing-material.md) — Reuse Claude 101, AI Fluency, Chrome/Design guides; adapt Skills and Code docs; author all consultant content ourselves.
 - [Surface - which Claude surface is the spine of the course?](tickets/surface-choice.md) — Claude Cowork in the desktop app is the Spine; Claude Code is shown late as contrast and as the fallback if record-a-skill proves too weak.
+- [Teaching mode - who teaches it, to how many, and must it survive another instructor?](tickets/teaching-mode.md) — Live 1:1 by the author. Learner-facing material is written because the repo is cloned to their machine; the instructor script is deferred until a second Learner or a second instructor.
 <!-- decision-map:decisions:end -->
 
 ## Not yet specified
