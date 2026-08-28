@@ -21,6 +21,13 @@ One of the three roles a Learner plays in the same working day:
 Deliberately not "role": a Learner wears all three, often in one day, so the
 course teaches all three rather than specialising in one.
 
+## Deliverable
+
+A document the Learner gives to a client in the course of their own work - a
+proposal, a spec, a site report, a costed BOQ. Always the Learner's own client
+artifact. The word is never used for something the course itself requires them
+to produce, and a Lab is built around a Deliverable rather than creating one.
+
 ## Surface
 
 One entry point into Claude, as a Learner would see it - Claude Cowork, Claude
