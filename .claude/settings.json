@@ -11,7 +11,8 @@
       "source": {
         "source": "github",
         "repo": "ThodsaphonSonthiphin/workflow-daily-work"
-      }
+      },
+      "autoUpdate": true
     }
   }
 }
