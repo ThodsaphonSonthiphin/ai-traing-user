@@ -61,6 +61,10 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 - Decided: the number rule from claude-course-0007 becomes a STEP of Lab 4, not a second check - every number on the page comes from the Lab 3 file and the Learner points at file and location. A check tests that Lab's own capability, and Lab 4's capability is Claude Design, so the Lab 4 check is unchanged.
 - Glossary: Deliverable is now a term in CONTEXT.md. The word carried two senses in this repo - the Learner's own client artifact, and the per-session course output that claude-course-0005 withdrew. Only the first sense is used.
 - Consequence for capstone-spec: Lab 3 into Lab 4 is a chain, not two tool demonstrations. Lab 3 produces the numbers, Lab 4 puts them on a page the client keeps. That is the most obvious repeatable job the course creates, so it is the leading candidate for what the Learner records as their Capstone Skill.
+- Decided: NO network share anywhere in report-pitch (claude-course-0011). Setup step 7 is a folder on the Mac's own disk with the project files copied into it - one route, no attempt. The optional 30-second try was rejected because it puts a VPN-and-permissions-dependent step back inside the sitting that exists to contain variance.
+- Accepted cost: the Learner works on a COPY. claude-course-0008's objection that a copy goes stale is NOT withdrawn, it is outranked for this milestone - and the Learner is told 're-copy before a session where the numbers matter' as an instruction, not a caveat.
+- Amended by dated amendments: claude-course-0008's try-first ordering collapses to its baseline, and claude-course-0009's step 7 no longer names the share. Nothing else in either ADR moves.
+- Measured on the author's Mac (macOS 26.5.2, Claude 1.37937.3): Cowork is a full Linux VM under Apple's Virtualization framework and reaches host folders over VIRTIOFS at /mnt/.virtiofs-root/shared/<host absolute path>, bind-mounted per session onto /sessions/<name>/mnt/work. STILL NOT MEASURED - whether virtiofs traverses into a filesystem mounted at /Volumes, and whether Cowork's folder picker offers one. No share was available to mount; the mechanism notes live on the closed share-reachability ticket.
 <!-- decision-map:notes:end -->
 
 ## Milestones
@@ -82,6 +86,7 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 - [Lab pattern - how is a lab repeatable when every learner brings different input?](tickets/lab-design-pattern.md) — Every Lab has four parts: their own work varies; the steps, one check and the stuck-list are fixed. The check tests capability, not content, so it is writable once.
 - [Numbers - what does a Learner do before acting on a figure Claude produced?](tickets/number-trust.md) — A number must point to a source: calculated ones carry their formula in the cell, copied ones name file and location, and model-supplied figures are banned outright.
 - [Session shape - how many sessions, how long, how often, and what does each deliver?](tickets/session-shape.md) — Five sessions of about 60 minutes, one Lab each, no per-session deliverable by decision. Cadence is an assumption, made safe by teaching the memory recap step in every case.
+- [Mounted network share - does Cowork read one, and what happens if it does not?](tickets/share-reachability.md) — Deferred, not measured: the Working folder is local disk only through report-pitch, Setup step 7 drops the share attempt, and the virtiofs mechanism is recorded for whoever measures it later.
 - [Teaching mode - who teaches it, to how many, and must it survive another instructor?](tickets/teaching-mode.md) — Live 1:1 by the author. Learner-facing material is written because the repo is cloned to their machine; the instructor script is deferred until a second Learner or a second instructor.
 
 #### (unassigned)
@@ -99,6 +104,7 @@ A live-taught workshop, run as several short consecutive sessions, after which a
 - How learners keep improving after the course ends - refresher, internal community, or nothing.
 - How business impact is measured after the course - time saved per proposal, or something else.
 - When the Setup sitting happens relative to session 1 - same day, or a separate day. Related to the cadence assumption already recorded on session-shape.
+- Whether any milestone after report-pitch puts the Learner on LIVE project files rather than a copy - that, and only that, is what reopens the network-share question closed by claude-course-0011.
 <!-- decision-map:fog:end -->
 
 ## Out of scope

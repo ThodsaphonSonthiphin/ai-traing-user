@@ -91,3 +91,18 @@ where-people-get-stuck list. The fourth part - the Learner's own varying work -
 is exactly what the Setup does not have, which is the same fact that makes it not
 a Lab. Its stuck-list starts empty on purpose, and it is likely to be the first
 one that fills.
+
+## Amended 2026-08-29
+
+Step 7 of the table above is scoped by `claude-course-0011`. It no longer tries
+the mounted network share. It now reads:
+
+> **7** — Point Cowork at the Learner's own Working folder: a folder on the Mac's
+> own disk, holding the project files they copied into it. It brings client data,
+> so it follows step 6.
+
+Everything else about the Setup is unchanged - the separate sitting, the ~20
+minutes, the repository-based check at step 5, the forced order of steps 5, 6 and
+7, and the reasons each of those is where it is. The amendment removes a
+network-dependent action from the sitting that exists to contain variance; it does
+not move the step.

@@ -79,3 +79,20 @@ folder on local disk, the setup lab carries the network-share attempt as a
 try-then-fall-back step, and the boundary section is authored material the Learner
 keeps. The day-zero setup therefore has no external dependency and no step that
 can fail for reasons outside the room.
+
+## Amended 2026-08-29
+
+The section *"Which folder, when the real work is on a network share"* is scoped
+by `claude-course-0011`: through the `report-pitch` milestone the mounted network
+share is **not tried at all**, and a folder on the Mac's own disk is the only
+route. The three-way ordering above - baseline, tried-first, fallback - collapses
+to the baseline alone.
+
+The rest of this ADR stands unchanged: one local folder is the entire
+prerequisite, no connector is required, Lab 1 is hands-on local files with one
+demonstrated connector, and the out-list keeps both of its reasons.
+
+The objection recorded above against copy-down-always - that the copy goes stale
+and teaches a habit that does not survive the course - is **not withdrawn**.
+`claude-course-0011` accepts it as a stated cost and names what the Learner is
+told instead.
